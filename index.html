@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juki' Portfolio Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+</head>
+
+<body>
+  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-4 dark:bg-neutral-800">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+      <div class="fade-in flex items-center justify-between">
+        <a class="flex-none text-3xl font-serif dark:text-white" href="index.html">Juki's Portfolio</a>
+        <div class="sm:hidden">
+          <button type="button" id="menu-btn" class="p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="menu-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="menu-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-collapse-with-animation" class="hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="fade-in h-screen sm:h-full flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+          <a class="font-serif text-xl text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="?1#section1">Work</a>
+          <a class="font-serif text-xl text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="?1#section2">About</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="flex flex-col items-center justify-center min-h-screen text-center">
+        <h1 class="fade-in text-7xl font-serif text-left">
+          JUKI<br>
+          OTSUKA<br>
+          <span class="text-5xl">-Portfolio</span>
+        </h1>
+      </div>
+    </section>
+
+    <section id="section1" class="bg-[#D5D5D5] py-32">
+      <h2 class="fade-in text-5xl font-serif text-center font-bold">Work</h2>
+      <p class="fade-in text-base font-serif text-center mt-20">制作物はまだありません。</p>
+      <p class="fade-in text-base font-serif text-center mt-10">
+        このポートフォリオ自体もデザインからコーディングまですべて自分で行いました。<br>
+        制作物の一部としてご覧ください。
+      </p>
+    </section>
+
+    <section id="section2" class="py-32">
+      <h2 class="fade-in text-5xl font-serif text-center font-bold mb-10">About</h2>
+      <div class="md:flex flex-row gap-x-5">
+        <div class="basis-1/2 flex items-center justify-end fade-in">
+          <img src="img/23074647.JPG" class="lg:w-[70%] lg:h-[90%]">
+        </div>
+        <div class="basis-1/2 text-base font-serif mx-10 md:mx-0">
+          <p class="fade-in text-xl">大塚　樹希</p>
+          <p class="fade-in text-base">Otsuka Juki</p>
+          <p class="fade-in text-base font-bold mt-10">-自己紹介</p>
+          <p class="fade-in text-base font-serif mt-5">
+            <span class="font-sans">2001</span>年
+            <span class="font-sans">10</span>月
+            <span class="font-sans">9</span>日生まれ（
+            <span class="font-sans">22</span>歳）
+          </p>
+          <p class="fade-in text-base font-serif mt-5">福岡県古賀市出身（長崎県佐世保市在住）</p>
+          <p class="fade-in text-base font-serif mt-5">
+            <span class="font-sans">2024</span>年
+            <span class="font-sans">3</span>月大学卒業後、同年
+            <span class="font-sans">4</span>月システムエンジニアとして飲食店関連企業に入社。<br>
+            ソフトフェア事業部にて、主にHPデザイン設計・制作に従事しております。<br>
+            未経験でWEB業界に入り、現在は実務を通して学習中です。
+          </p>
+          <p class="fade-in font-serif mt-5">副業としてWEBデザイン・制作に挑戦してます。</p>
+          <p class="fade-in text-base font-bold mt-10">-連絡先</p>
+          <p class="fade-in text-base font-serif">
+            メールアドレス: <a href="mailto:ootsukajuki@gmail.com">ootsukajuki@gmail.com</a>
+          </p>
+        </div>  
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-sm font-sans text-center py-4">
+    <p>&copy; 2024 Juki Otsuka.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
